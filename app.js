@@ -52,6 +52,7 @@ const client = new Client({
       '--single-process', // <- this one doesn't works in Windows
       '--disable-gpu'
     ],
+    ignoreDefaultArgs: ['--disable-extensions']
   },
   authStrategy: new LocalAuth()
 });
